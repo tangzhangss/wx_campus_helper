@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/foundthing/foundthing",
+    "pages/shophelper/shophelper",
+    "pages/secondhandstore/secondhandstore",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园助手",
+    "navigationBarTextStyle": "black"
+  }
+}

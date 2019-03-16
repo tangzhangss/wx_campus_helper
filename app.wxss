@@ -1,0 +1,4 @@
+/**app.wxss**/
+.container {
+  box-sizing: border-box;
+} 

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<image class='backimg' src='/img/back.jpg' mode='scaleToFill'></image>
+<view class="container" style=''>
+   <view class='notice'>
+     这里是公告
+   </view>
+
+   <view class='menu-box'>
+      <navigator  url="/pages/foundthing/foundthing" class='one a'>
+         失物招领
+      </navigator>
+      <navigator url="/pages/shophelper/shophelper" class='one b'>
+        跑腿代购
+      </navigator>
+      <navigator url="/pages/secondhandstore/secondhandstore"  class='one c'>
+        二手商城
+      </navigator>
+      <navigator url="/pages/me/me"  class='one d'>
+          个人中心
+      </navigator>
+   </view>
+</view>
