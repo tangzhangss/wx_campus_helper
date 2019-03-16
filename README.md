@@ -3,4 +3,4 @@
  
 #### 首页展示
 
-![首页](https://assist-tool.oss-cn-beijing.aliyuncs.com/campus-helper-backimg.png)
+![首页](http://assist-tool.oss-cn-beijing.aliyuncs.com/campus-helper-backimg.png)
