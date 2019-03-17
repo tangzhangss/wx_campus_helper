@@ -2,7 +2,7 @@
 <image class='backimg' src='/img/back.jpg' mode='scaleToFill'></image>
 <view class="container" style=''>
    <view class='notice'>
-     这里是公告
+     {{notice}}
    </view>
 
    <view class='menu-box'>

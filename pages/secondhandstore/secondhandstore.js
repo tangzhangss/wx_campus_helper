@@ -1,13 +1,44 @@
 // pages/secondhandstore/secondhandstore.js
+const webUtil = require("../../utils/config.js");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goodsList:wx.getStorageSync("goodsList"),
+    inputValue:"",
   },
-
+  seekChange:function(e){
+    this.data.inputValue = e.detail.value
+  },
+  seekGoods:function(e){
+    let goodsList = wx.getStorageSync("goodsList");
+    let key = this.data.inputValue;
+    console.log("搜索关键字:",key);
+    
+    if(key == ''){
+      this.setData({
+        goodsList: goodsList
+      })
+      return false;
+    }
+    
+    //查找
+    let temps = [];
+    goodsList.forEach(function(val,index){
+      let i = val.desc.indexOf(key);
+      console.log("配置索引:结果 ",index,i)
+      if (i > 0){
+        console.log("匹配成功，添加..."+val.id)
+        temps.push(val);
+      }
+    })
+   
+   this.setData({
+     goodsList: temps
+   })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -21,7 +52,12 @@ Page({
   onReady: function () {
 
   },
-
+  call(e){
+   let num = e.currentTarget.dataset.num;
+   wx.makePhoneCall({
+     phoneNumber: num,
+   })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,2 +1,58 @@
 <!--pages/secondhandstore/secondhandstore.wxml-->
-<text>pages/secondhandstore/secondhandstore.wxml</text>
+<view class='container'>
+   <view class='mark'>
+      如需购买，请拨打卖家电话联系交易
+   </view>
+   <view class='find'>
+      <input placeholder='物品名称' bindinput='seekChange'></input>
+      <button bindtap='seekGoods'>搜索</button>
+   </view>
+
+   <view class='thing-box'>
+   
+      <view class='left'> 
+         <block wx:for="{{goodsList}}" wx:key="">
+         <view class='one'  wx:if="{{index % 2 == 0}}">
+         <image class='logo' src='{{item.logo}}'></image>
+         <view class='base'>
+              <view class='userinfo'>
+             <image class='avatars' src='{{item.avatars}}'></image>
+              <text>{{item.name}}</text> <!-- <text>男</text> -->
+           </view>
+             <view class='status' wx:if="{{status!=0}}">已处理</view>
+         </view>
+           <view class='desc'>
+             {{item.desc}}
+           </view>
+           <view class='contact' bindtap='call' data-num='{{item.contact}}'>
+             <text>{{item.contact}}</text> <image class='call' src='/img/call.png'></image>
+           </view>
+         </view><!--one end-->
+          </block>
+      </view>
+     <view class='right'> 
+      <block wx:for="{{goodsList}}" wx:key="">
+         <view class='one'  wx:if="{{index % 2 != 0}}">
+         <image class='logo' src='{{item.logo}}'></image>
+         <view class='base'>
+              <view class='userinfo'>
+             <image class='avatars' src='{{item.avatars}}'></image>
+              <text>{{item.name}}</text> <!-- <text>男</text> -->
+           </view>
+             <view class='status' wx:if="{{status!=0}}">已处理</view>
+         </view>
+           <view class='desc'>
+             {{item.desc}}
+           </view>
+           <view class='contact' bindtap='call' data-num='{{item.contact}}'>
+             <text>{{item.contact}}</text> <image class='call' src='/img/call.png'></image>
+           </view>
+         </view><!--one end-->
+          </block>
+      </view>
+   </view>
+
+   <view class='add'>
+      <image src='/img/sale.png'></image>
+   </view>
+</view>
