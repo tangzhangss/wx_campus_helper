@@ -53,10 +53,20 @@ Page({
 
   },
   call(e){
-   let num = e.currentTarget.dataset.num;
-   wx.makePhoneCall({
-     phoneNumber: num,
+    let num = e.currentTarget.dataset.num;
+   wx.showModal({
+     title: '提示',
+     content: '现在拨打卖方电话:' + num,
+     success:function(res){
+       if(res.confirm){
+         wx.makePhoneCall({
+           phoneNumber: num,
+         })
+       }
+     }
    })
+ 
+ 
   },
   /**
    * 生命周期函数--监听页面显示

@@ -24,8 +24,8 @@
            <view class='desc'>
              {{item.desc}}
            </view>
-           <view class='contact' bindtap='call' data-num='{{item.contact}}'>
-             <text>{{item.contact}}</text> <image class='call' src='/img/call.png'></image>
+           <view class='contact' >
+             <text>{{item.contact}}</text> <image class='call' bindtap='call' data-num='{{item.contact}}' src='/img/call.png'></image>
            </view>
          </view><!--one end-->
           </block>
