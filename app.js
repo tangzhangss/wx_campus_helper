@@ -18,7 +18,9 @@ App({
       wx.setStorageSync("goodsList", goodsList);
     }
   
-
+   //2.个人信息
+    this.globalData.userInfo = wx.getStorageSync("userInfo") || null;
+    //console.log(wx.getStorageSync("userInfo"));
   },
   globalData: {
     userInfo: null

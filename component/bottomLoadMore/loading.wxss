@@ -1,0 +1,13 @@
+/* pages/component/loading.wxss */
+button{
+   background: none;
+}
+button::after{
+  border: none;
+}
+.loading,.more{
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 25rpx;
+  margin: 20rpx 0;
+  text-align: center;
+}

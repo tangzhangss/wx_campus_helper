@@ -1,0 +1,4 @@
+<!--pages/component/loading.wxml-->
+<button class='loading' loading hover-class="none" hidden="{{loading=='false'}}">加载中...</button>
+<view class='more' hidden="{{loading=='true' || haveMore=='false'}}">~~ 上划加载更多 ~~</view>
+<view class='more' hidden="{{loading=='true' || haveMore=='true'}}">~~ 没有更多了 ~~</view>

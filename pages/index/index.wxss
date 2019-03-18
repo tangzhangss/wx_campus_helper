@@ -1,4 +1,7 @@
 /**index.wxss**/
+auth{
+ 
+}
 .backimg{
   position: absolute;
   top: 0;

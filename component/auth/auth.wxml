@@ -1,0 +1,15 @@
+
+<view class='accredit' wx:if="{{userInfo == null}}">
+ <view class="accredit-view"> 
+    <view style="font-size: 36rpx;font-weight:600;margin: 40rpx 0;text-align: center;">微信授权</view>
+    <view style="padding: 0 40rpx; display: flex;">
+      <view style="font-size:20rpx;color:#8896b1;margin-right:20rpx;line-height:50rpx;">●</view>
+      <view style="font-size:32rpx;color:#8896b1;">
+        <view style="line-height:50rpx;">获取你的公开信息</view>
+        <view style="line-height:50rpx;">（昵称、头像）</view>
+      </view>
+    </view>
+    <button open-type="getUserInfo" lang='zh_CN' bindgetuserinfo='_bindgetuserinfo' class="accredit-btn" style='background:{{color}}'>请先授权</button>
+  </view>
+</view>
+

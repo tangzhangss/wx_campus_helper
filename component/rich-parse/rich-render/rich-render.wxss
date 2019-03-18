@@ -1,0 +1,270 @@
+view {
+  word-break: break-all;
+  overflow: auto;
+}
+.rich-parse-inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.rich-parse-div {
+  margin: 0;
+  padding: 0;
+}
+.rich-parse-h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.rich-parse-h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+}
+.rich-parse-h3 {
+  font-size: 1.17em;
+  margin: 0.83em 0;
+}
+.rich-parse-h4 {
+  margin: 1.12em 0;
+}
+.rich-parse-h5 {
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+.rich-parse-h6 {
+  font-size: .75em;
+  margin: 1.67em 0;
+}
+.rich-parse-h1 {
+  font-size: 36rpx;
+  font-weight: 400;
+  margin-bottom: .9em;
+}
+.rich-parse-h2 {
+  font-size: 32rpx;
+  font-weight: 400;
+  margin-bottom: .34em;
+}
+.rich-parse-h3 {
+  font-weight: 400;
+  font-size: 30rpx;
+  margin-bottom: .34em;
+}
+.rich-parse-h4 {
+  font-weight: 400;
+  font-size: 28rpx;
+  margin-bottom: .24em;
+}
+.rich-parse-h5 {
+  font-weight: 400;
+  font-size: 26rpx;
+  margin-bottom: .14em;
+}
+.rich-parse-h6 {
+  font-weight: 400;
+  font-size: 24rpx;
+  margin-bottom: .04em;
+}
+.rich-parse-h1,
+.rich-parse-h2,
+.rich-parse-h3,
+.rich-parse-h4,
+.rich-parse-h5,
+.rich-parse-h6,
+.rich-parse-b,
+.rich-parse-strong {
+  font-weight: bolder;
+}
+.rich-parse-i,
+.rich-parse-cite,
+.rich-parse-em,
+.rich-parse-var,
+.rich-parse-address {
+  font-style: italic;
+}
+.rich-parse-pre,
+.rich-parse-tt,
+.rich-parse-code,
+.rich-parse-kbd,
+.rich-parse-samp {
+  font-family: monospace;
+}
+.rich-parse-pre {
+  white-space: pre;
+}
+.rich-parse-big {
+  font-size: 1.17em;
+}
+.rich-parse-small,
+.rich-parse-sub,
+.rich-parse-sup {
+  font-size: 0.83em;
+}
+.rich-parse-sub {
+  vertical-align: sub;
+}
+.rich-parse-sup {
+  vertical-align: super;
+}
+.rich-parse-s,
+.rich-parse-strike,
+.rich-parse-del {
+  text-decoration: line-through;
+}
+/*rich-parse-自定义个性化的css样式*/
+/*增加video的css样式*/
+.rich-parse-strong,
+.rich-parse-s {
+  display: inline;
+}
+.rich-parse-a {
+  color: deepskyblue;
+  word-break: break-all;
+  overflow: auto;
+}
+.rich-parse-video-view {
+  text-align: center;
+  margin: 20rpx 0;
+}
+.rich-parse-video {
+  width: 100%;
+}
+.rich-parse-audio-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  overflow: hidden;
+}
+.rich-parse-img {
+  overflow: hidden;
+  max-width: 100%;
+}
+.rich-parse-blockquote {
+  margin: 0;
+  padding: 20rpx 0 20rpx 10rpx;
+  font-family: Courier, Calibri, "宋体";
+  background: #f5f5f5;
+  border-left: 6rpx solid #dbdbdb;
+}
+.rich-parse-code {
+  display: inline;
+  background: #f5f5f5;
+}
+.rich-parse-ul {
+  margin: 20rpx 10rpx;
+}
+.rich-parse-li,
+.rich-parse-li-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+  margin: 10rpx 0;
+}
+.rich-parse-li-text {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  line-height: 40rpx;
+}
+.rich-parse-li-circle {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  margin-right: 10rpx;
+}
+.rich-parse-li-square {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  margin-right: 10rpx;
+}
+.rich-parse-li-ring {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  border: 1PX solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10rpx;
+}
+.rich-parse-table {
+  width: 100%;
+  height: 800rpx;
+}
+.rich-parse-thead,
+.rich-parse-tfoot,
+.rich-parse-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.rich-parse-th,
+.rich-parse-td {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 1160rpx;
+  overflow: auto;
+}
+.rich-parse-u {
+  text-decoration: underline;
+}
+.rich-parse-hide {
+  display: none;
+}
+.rich-emoji-view {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.rich-emoji {
+  width: 32rpx;
+  height: 32rpx;
+}
+.rich-parse-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-right: 1PX solid #e0e0e0;
+  border-bottom: 1PX solid #e0e0e0;
+  border-top: 1PX solid #e0e0e0;
+}
+.rich-parse-th,
+.rich-parse-td {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 10rpx;
+  border-left: 1PX solid #e0e0e0;
+  word-break: break-all;
+}
+.rich-parse-td:last-child {
+  border-top: 1PX solid #e0e0e0;
+}
+.rich-parse-th {
+  background: #f0f0f0;
+  border-top: 1PX solid #e0e0e0;
+}
+.rich-parse-del {
+  display: inline;
+}
+.rich-parse-figure {
+  overflow: hidden;
+}

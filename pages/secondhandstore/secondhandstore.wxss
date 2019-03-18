@@ -92,7 +92,7 @@ page{
   margin-left:10rpx;
 }
 .thing-box .one .base .status{
-  color: rgb(35, 209, 29);
+  color: hsl(118, 85%, 47%);
   font-size: 25rpx;
 } 
 .thing-box .one .base .userinfo .avatars{
@@ -125,5 +125,51 @@ page{
   border-radius: 100rpx;
 }
 .add:Hover{
-  filter: brightness(0.9);
+  filter: brightness(0.7);
+}
+.form-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+  overflow: hidden;
+}
+.form-box{
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  width: 90vw;
+  box-sizing: border-box;
+  padding: 50rpx 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+   z-index: 299;               
+  box-shadow: 1px 1px 3px 1px #eee;
+}
+.form-box .logo{
+  width: 60vw;
+  height: 60vw;
+  margin: 0 auto;
+  display: block;
+}
+.form-box input{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 2px 1px  #ee0000;
+  padding-left: 10rpx;
+  margin-top: 20rpx;
+}
+.form-box  .submit{
+   height: 80rpx;
+   line-height: 80rpx;
+   width: 60vw;
+   margin:20rpx auto;
+   border-radius: 20rpx;
+   background-color: rgb(53, 173, 243);
+   color: white;
+   text-align: center;
 }

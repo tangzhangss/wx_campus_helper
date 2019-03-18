@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+    "navigationBarBackgroundColor": "#ee0000",
+    "navigationBarTitleText": "失物招领",
+    "navigationBarTextStyle": "white"
 }

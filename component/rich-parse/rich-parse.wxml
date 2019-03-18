@@ -1,0 +1,5 @@
+<view class="rich-parse">
+  <block wx:for="{{ rich.nodes }}" wx:key="{{ index }}">
+    <rich-render item="{{ item }}" parse_id="{{ parse_id }}"/>
+  </block>
+</view>

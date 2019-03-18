@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<auth color="red" bind:authCallback="authCallback"></auth>
 <image class='backimg' src='/img/back.jpg' mode='scaleToFill'></image>
 <view class="container" style=''>
    <view class='notice'>

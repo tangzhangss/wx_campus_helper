@@ -5,7 +5,7 @@
    </view>
    <view class='find'>
       <input placeholder='物品名称' bindinput='seekChange'></input>
-      <button bindtap='seekGoods'>搜索</button>
+      <button bindtap='seekGoods'>搜索</button> 
    </view>
 
    <view class='thing-box'>
@@ -24,8 +24,8 @@
            <view class='desc'>
              {{item.desc}}
            </view>
-           <view class='contact' >
-             <text>{{item.contact}}</text> <image class='call' bindtap='call' data-num='{{item.contact}}' src='/img/call.png'></image>
+           <view class='contact' bindtap='call' data-num='{{item.contact}}'>
+             <text>{{item.contact}}</text> <image class='call' src='/img/call.png'></image>
            </view>
          </view><!--one end-->
           </block>
@@ -52,7 +52,23 @@
       </view>
    </view>
 
-   <view class='add'>
+   <view class='add'  bindtap='toggleFormBox' data-val="1">
       <image src='/img/sale.png'></image>
    </view>
 </view>
+<!--卖二手 表单-->
+<block wx:if="{{showformbox}}">
+<view class='form-back'  bindtap='toggleFormBox' data-val="0" >
+</view>
+<view class='form-box'>
+     <image class='logo'   src='{{info.logo}}'  bindtap='chooseImage'>
+     </image>
+     <input class='contact' placeholder='联系方式' bindinput='infomodify' data-col="contact"></input>
+      <input class='desc' placeholder='物品描述' bindinput='infomodify' data-col="desc"></input>
+      <view class='submit' bindtap='saveFormboxcontent'>提交</view>
+</view> 
+</block>
+
+
+
+

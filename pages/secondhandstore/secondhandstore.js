@@ -1,5 +1,6 @@
 // pages/secondhandstore/secondhandstore.js
 const webUtil = require("../../utils/config.js");
+const app = getApp();
 Page({
 
   /**
@@ -8,9 +9,75 @@ Page({
   data: {
     goodsList:wx.getStorageSync("goodsList"),
     inputValue:"",
+    info:{
+      logo:'http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg',
+      contact:'',
+      desc:'',
+      status:0,
+    }
+  },
+  toggleFormBox(e){
+     console.log(e);
+     let val = e.currentTarget.dataset.val;
+     this.setData({
+       showformbox: val==1?true:false
+     })
+  },
+  chooseImage:function(){
+    var that = this;
+     wx.chooseImage({
+       success: function(res) {
+          that.setData({
+            'info.logo': res.tempFilePaths[0]
+          })
+       },
+     })
+  },
+  infomodify:function(e){
+     let val =e.detail.value;
+     let col = e.currentTarget.dataset.col;
+
+     let data = "{\"info."+col+"\":\""+val+"\"}";
+     console.log(data);
+
+     data = JSON.parse(data);
+
+     this.setData(data);
   },
   seekChange:function(e){
     this.data.inputValue = e.detail.value
+  },
+  saveFormboxcontent:function(e){
+    let goodsList = wx.getStorageSync("goodsList") || [];
+
+    let info = this.data.info;
+    let id = goodsList.length;
+    goodsList.forEach((val,index)=>{
+         if(val.id == id){
+            id++;
+         }
+    })
+    info.id = id;
+    info.avatars = app.globalData.userInfo.avatarUrl;
+    info.name = app.globalData.userInfo.nickName;
+
+    console.log(info);
+
+     goodsList.unshift(info);
+
+     this.setData({
+         goodsList: goodsList,
+         showformbox:false
+     })
+
+    //更新缓存
+    wx.setStorageSync("goodsList", goodsList);
+
+     //个人商品数据改变
+    let myGoodsList = wx.getStorageSync("myGoodsList") || [];
+    myGoodsList.unshift(info);
+    wx.setStorageSync("myGoodsList", myGoodsList);
+
   },
   seekGoods:function(e){
     let goodsList = wx.getStorageSync("goodsList");
@@ -35,9 +102,12 @@ Page({
       }
     })
    
-   this.setData({
-     goodsList: temps
-   })
+    this.setData({
+       goodsList: temps
+    })
+
+   
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -53,20 +123,10 @@ Page({
 
   },
   call(e){
-    let num = e.currentTarget.dataset.num;
-   wx.showModal({
-     title: '提示',
-     content: '现在拨打卖方电话:' + num,
-     success:function(res){
-       if(res.confirm){
-         wx.makePhoneCall({
-           phoneNumber: num,
-         })
-       }
-     }
+   let num = e.currentTarget.dataset.num;
+   wx.makePhoneCall({
+     phoneNumber: num,
    })
- 
- 
   },
   /**
    * 生命周期函数--监听页面显示

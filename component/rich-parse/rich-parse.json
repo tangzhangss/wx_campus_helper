@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rich-render": "./rich-render/rich-render"
+  }
+}

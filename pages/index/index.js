@@ -8,6 +8,10 @@ Page({
     userInfo:{},
     notice: config.getIndex().notice
   },
+  authCallback:function(){
+     console.log("用户回调用完成.....");
+  },
   onLoad:function () {
+    
   }
 })

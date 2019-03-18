@@ -1,2 +1,20 @@
 <!--pages/foundthing/foundthing.wxml-->
 <text>pages/foundthing/foundthing.wxml</text>
+<view class = 'container'>
+ <view class = 'mark'>
+如发现你丢失的物品，请联系我们！
+ </view>
+ <view class = 'find'>
+  <input value='请输入你丢失的物品名称'  bindinput='seekChange'></input>
+  <button bindtap='seekThings'>搜索</button>
+ </view>
+ <view>
+ <image class='logo' src='/img/key.jpg'  ></image>
+  <view class='base'>
+   <image class='user' src='/img/person.png'></image>
+   <view class='name'>陈浩</view>
+   <view class='contact'>联系方式：18940996892</view>
+   <view class='address'>丢失地址：四川省成都市成都七中A5 605教室</view>
+  </view>
+ </view>
+</view>

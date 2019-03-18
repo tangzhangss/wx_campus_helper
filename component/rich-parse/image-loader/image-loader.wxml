@@ -1,0 +1,6 @@
+<block wx:if="{{ displayImg }}">
+  <slot/>
+</block>
+<block wx:else>
+  <image src="{{ src }}" style="display: none;" bindload="onImgLoad"/>
+</block>

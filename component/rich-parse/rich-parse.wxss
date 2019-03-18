@@ -1,0 +1,6 @@
+.rich-parse {
+  font-family: Helvetica, sans-serif;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8;
+}

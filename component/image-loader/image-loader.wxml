@@ -1,0 +1,10 @@
+<!--pages/component/imagePrevLoad/imagePrevLoad.wxml-->
+
+<image  hidden="{{loaded != 'true'}}" class='fade_in' src='{{src}}' mode='{{mode}}' bindload="_loadComplete" style="{{imageStyle}}" data-index="{{index}}">
+ </image>
+ <image hidden="{{loaded == 'true'}}" class='fade_in' src='{{prevImage}}' mode='{{mode}}' style="{{imageStyle}}" >
+ </image>
+
+ 
+
+ 
