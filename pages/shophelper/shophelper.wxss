@@ -1,1 +1,171 @@
-/* pages/shophelper/shophelper.wxss */
+.nav{
+  position: fixed;
+  height: 80rpx;
+  top: 0;
+  left: 0;
+  width:100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1rpx 1rpx 1rpx 10rpx #f7f7f7;
+  background-color: white;
+}
+.nav .one{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 50rpx;
+}
+.bound{
+  height: 100rpx;
+  color: white;
+}
+.selected{
+  color: #ee0000;
+  border-bottom: 5rpx solid #ee0000;
+}
+.list{
+  padding-bottom: 150rpx;
+}
+.list .one{
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #eee;
+  width: 95vw;
+  margin: 0 auto;
+}
+.list .one .user image{
+   height: 12vw;
+   width: 12vw;
+   border-radius: 12vw;
+}
+.list .one .user{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.list .one .user .info{
+  width: 83vw;
+  margin-left: 20rpx;
+}
+.list .one .user .a{
+  display: flex;
+}
+.list .one .user .a text{
+  margin-right: 20rpx;
+}
+.list .one .user .b{
+  display: flex;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  justify-content: space-between;
+}
+.list .one .user .b .money{
+color: rgb(17, 148, 35);
+}
+.list .one .user .b .time{
+  color: #999;
+}
+.list .one .col{
+  color: #777;
+  margin: 5rpx 0;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.list .one .col image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.sure{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 25rpx;
+  color: rgb(182, 177, 177);
+}
+.sure .help{
+  background-color: #ee0000;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+  width: 120rpx;
+  font-weight: bold;
+}
+.sure .help1{
+  background-color: #3eca13;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+  width: 120rpx;
+  font-weight: bold;
+}
+.add{
+  position: fixed;
+  bottom: 1vh;
+  right: 2vw;
+}
+.add image{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 100rpx;
+  background-color: white;
+}
+.add:Hover{
+  filter: brightness(0.7);
+}
+.form-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+  overflow: hidden;
+}
+.form-box{
+  position: fixed;
+  top: 20vh;
+  left: 5vw;
+  width: 90vw;
+  box-sizing: border-box;
+  padding:20rpx 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+   z-index: 299;               
+  box-shadow: 1px 1px 3px 1px #eee;
+}
+.form-box .logo{
+  width: 60vw;
+  height: 60vw;
+  margin: 0 auto;
+  display: block;
+}
+.form-box input{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 2px 1px  rgb(63, 159, 214);
+  padding-left: 10rpx;
+  margin-top: 20rpx;
+}
+.form-box  .submit{
+   height: 80rpx;
+   line-height: 80rpx;
+   width: 60vw;
+   margin:20rpx auto;
+   border-radius: 20rpx;
+   background-color: rgb(53, 173, 243);
+   color: white;
+   text-align: center;
+}
+
+

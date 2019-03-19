@@ -19,7 +19,7 @@
              <image class='avatars' src='{{item.avatars}}'></image>
               <text>{{item.name}}</text> <!-- <text>男</text> -->
            </view>
-             <view class='status' wx:if="{{status!=0}}">已处理</view>
+             <view class='status' wx:if="{{item.status!=0}}">已处理</view>
          </view>
            <view class='desc'>
              {{item.desc}}
@@ -39,7 +39,7 @@
              <image class='avatars' src='{{item.avatars}}'></image>
               <text>{{item.name}}</text> <!-- <text>男</text> -->
            </view>
-             <view class='status' wx:if="{{status!=0}}">已处理</view>
+             <view class='status' wx:if="{{item.status!=0}}">已处理</view>
          </view>
            <view class='desc'>
              {{item.desc}}

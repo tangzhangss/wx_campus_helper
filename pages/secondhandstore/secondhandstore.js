@@ -16,6 +16,27 @@ Page({
       status:0,
     }
   },
+  chooseImage: function () {
+    var that = this;
+    wx.chooseImage({
+      success: function (res) {
+        that.setData({
+          'info.logo': res.tempFilePaths[0]
+        })
+      },
+    })
+  },
+  infomodify: function (e) {
+    let val = e.detail.value;
+    let col = e.currentTarget.dataset.col;
+
+    let data = "{\"info." + col + "\":\"" + val + "\"}";
+    console.log(data);
+
+    data = JSON.parse(data);
+
+    this.setData(data);
+  },
   toggleFormBox(e){
      console.log(e);
      let val = e.currentTarget.dataset.val;

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -49,7 +49,14 @@
 				{
 					"id": -1,
 					"name": "失物招领",
-					"pathName": "pages/foundthing/foundthing"
+					"pathName": "pages/foundthing/foundthing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "跑腿代购",
+					"pathName": "pages/shophelper/shophelper",
+					"scene": null
 				}
 			]
 		}

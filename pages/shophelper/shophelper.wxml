@@ -1,2 +1,62 @@
 <!--pages/shophelper/shophelper.wxml-->
-<text>pages/shophelper/shophelper.wxml</text>
+<view class='container'>
+    <view class='nav'>
+       <view class="one new {{navSelectIndex == 0?'selected':''}}" bindtap='selectNav' data-index="0">
+          南校区
+        </view>
+       <view class="one {{navSelectIndex == 1?'selected':''}}" bindtap='selectNav' data-index="1">
+          北校区
+       </view>   
+    </view>  
+    <view class='bound'>我是上面nav的补位块</view>
+    
+    <view class='list'>
+      <block wx:for="{{list}}" wx:key="">
+          <view class='one'>
+              <view class='user'>
+                
+                 <image src='{{item.avatarurl}}'></image>
+                  <view class='info'>
+                     <view class='a'>
+                        <text>{{item.name}}</text><text>{{item.sex}}</text>
+                     </view>
+                     <view class='b'>
+                        <view class='money'>跑腿费:￥{{item.money}}</view><text class='time'>{{item.friendly_time}}</text>
+                     </view>
+                  </view>
+              </view>
+               <view class='col'>
+                 <image src='/img/goods.png'></image>{{item.goods}}
+              </view>
+              <view class='col'>
+                 <image src='/img/addr.png'></image>{{item.addr}}
+              </view>
+              <view class='sure' wx:if="{{item.status==0}}">
+                 <view>快来帮帮我吧^_^</view><text bindtap='callphone' class='help' data-num='{{item.contact}}'>帮忙</text>
+              </view>
+               <view class='sure' wx:else>
+                 <view>已经不需要帮助了^_^</view><text class='help1'>已处理</text>
+              </view>
+             
+          </view>
+      </block>
+    </view>
+</view>
+
+ <view class='add'  bindtap='toggleFormBox' data-val="1">
+      <image src='/img/add.png'></image>
+ </view>
+   
+<!--需要跑腿 表单-->
+<block wx:if="{{showformbox}}">
+<view class='form-back'  bindtap='toggleFormBox' data-val="0" >
+</view>
+<view class='form-box'>
+     <input class='contact' placeholder='联系方式' bindinput='infomodify' data-col="contact"></input>
+     <input class='desc' placeholder='姓名' bindinput='infomodify' data-col="name"></input>
+     <input class='addr' placeholder='地址' bindinput='infomodify' data-col="addr"></input>
+     <input class='goods' placeholder='物品' bindinput='infomodify' data-col="goods"></input>
+     <input class='money' placeholder='跑腿费' bindinput='infomodify' data-col="money"></input>
+     <view class='submit' bindtap='saveFormboxcontent'>提交</view>
+</view> 
+</block>

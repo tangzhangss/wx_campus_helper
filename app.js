@@ -1,5 +1,6 @@
 //app.js
 const config = require("./utils/config.js");
+const webUtil = require("./utils/web.js");
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -21,8 +22,17 @@ App({
    //2.个人信息
     this.globalData.userInfo = wx.getStorageSync("userInfo") || null;
     //console.log(wx.getStorageSync("userInfo"));
+
+    //3.南北校区跑腿代购。。。。转换时间
+    let shophelper0 = wx.getStorageSync("shophelper0");
+    let shophelper1 = wx.getStorageSync("shophelper1");
+    this.globalData.shophelper0 = shophelper0 || config.getShopHelper().shophelper0;
+    this.globalData.shophelper1 = shophelper1 || config.getShopHelper().shophelper1;
+  
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    shophelper0:null,
+    shophelper1:null
   }
 })
