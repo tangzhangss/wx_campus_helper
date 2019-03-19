@@ -6,6 +6,11 @@ page{
 .container >view{
   box-sizing: border-box;
 }
+.top{
+  width: 100vw;
+  height:210rpx;
+  position: fixed 
+}
 .mark{
   width: 100%;
   text-align: center;

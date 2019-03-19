@@ -1,1 +1,159 @@
 /* pages/me/me.wxss */
+.head{
+  width: 100vw;
+  padding:50rpx 20rpx;
+  background-color:#ee0000; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+}
+.head image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 200rpx;
+  margin-right: 20rpx;
+}
+.head{
+  font-size: 50rpx;
+}
+.box{
+  width: 100%;
+  padding: 20rrpx;
+  margin: 20rpx 0;
+}
+.box .title{
+  width: 95%;
+  margin: 0 auto;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.box .title .r{
+  font-size: 30rpx;
+  color: #ccc;
+}
+
+.list1 .one{
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #eee;
+  width: 95vw;
+  margin: 0 auto;
+}
+.list1 .one .user image{
+   height: 12vw;
+   width: 12vw;
+   border-radius: 12vw;
+}
+.list1 .one .user{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.list1 .one .user .info{
+  width: 83vw;
+  margin-left: 20rpx;
+}
+.list1 .one .user .a{
+  display: flex;
+}
+.list1 .one .user .a text{
+  margin-right: 20rpx;
+}
+.list1 .one .user .b{
+  display: flex;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  justify-content: space-between;
+}
+.list1 .one .user .b .money{
+color: rgb(17, 148, 35);
+}
+.list1 .one .user .b .time{
+  color: #999;
+}
+.list1 .one .col{
+  color: #777;
+  margin: 5rpx 0;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.list1 .one .col image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.sure{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 25rpx;
+  color: rgb(182, 177, 177);
+}
+.sure .help{
+  background-color: #ee0000;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+  width: 120rpx;
+  font-weight: bold;
+}
+.sure .help1{
+  background-color: #3eca13;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+  width: 120rpx;
+  font-weight: bold;
+}
+.thing-box{
+  margin: 20rpx auto;
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   
+}
+.thing-box .one{
+  padding:20rpx;
+  width: 41vw;
+  margin-bottom: 10rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1rpx solid white;
+  box-shadow: 1px 1px 10px 1px #eee;
+}
+
+.thing-box .one .logo{
+   width: 40vw;
+   height: 40vw;
+}
+.thing-box .one .desc{
+   margin: 10rpx 0;
+  width: 100%;
+  color: black;
+  font-size: 30rpx;
+}
+.goodsdeal{
+  background-color: #3eca13;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+  width: 120rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+}

@@ -9,8 +9,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ee0000",
     "navigationBarTitleText": "校园助手",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   }
 }

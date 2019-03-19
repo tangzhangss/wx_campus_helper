@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -56,7 +56,14 @@
 					"id": -1,
 					"name": "跑腿代购",
 					"pathName": "pages/shophelper/shophelper",
+					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": ""
 				}
 			]
 		}

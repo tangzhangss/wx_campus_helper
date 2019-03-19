@@ -1,1 +1,83 @@
 /* pages/foundthing/foundthing.wxss */
+.left{
+  width: 48%;
+}
+.right{
+  width: 48%;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding:1rpx 10rpx;
+}
+
+.mark{
+  width: 100%;
+ text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: hsl(300, 33%, 99%);
+  background-color:#ddd; 
+}
+
+.find{
+padding:20rpx 2.5vw;
+display: flex;
+width: 100vw;
+height: 120rpx;
+align-items: center;
+justify-content: space-between;
+}
+
+.find input{
+width: 70%;
+border: 1rpx solid #ddd;
+height: 80rpx;
+line-height: 80rpx;
+border-radius: 10rpx;
+padding-left: 10rpx; 
+}
+
+.find button{
+  width:20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background-color:#DC143C;
+  color: white;
+  padding: 0;
+}
+
+.logo{
+  width: 100%;
+  height: 40vw;
+}
+
+.things{
+  font-size: 27rpx;
+}
+
+.user{
+  width:5vw;
+  height:5vw;
+  border-radius: 20rpx;
+}
+
+.name{
+font-size: 27rpx;
+padding: 0rpx 90rpx;
+}
+
+.person{
+  display: flex;
+  font-size: 27rpx;
+}
+
+.contact{
+  font-size: 27rpx;
+}
+
+.address{
+  font-size: 27rpx;
+}

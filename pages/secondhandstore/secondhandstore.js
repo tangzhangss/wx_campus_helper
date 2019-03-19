@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodsList:wx.getStorageSync("goodsList"),
+    goodsList:[],
     inputValue:"",
     info:{
       logo:'http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg',
@@ -134,7 +134,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      goodsList: wx.getStorageSync("goodsList")
+    })
   },
 
   /**

@@ -68,6 +68,7 @@ Page({
     info.name = app.globalData.userInfo.nickName;
     info.avatarurl = app.globalData.userInfo.avatarUrl;
     info.sex = app.globalData.userInfo.gender==1?'男':'女';
+    info.index=index;//区分南北校区
     let list = [];
    
     if (index == 0) {  //南校区
@@ -114,6 +115,12 @@ Page({
     this.setData({
       showformbox:false
     }) 
+
+    //____________________________
+    //更改我的跑腿代购
+    let myShophelp = wx.getStorageSync("myShophelp") || [];
+    myShophelp.unshift(info);
+    wx.setStorageSync("myShophelp", myShophelp);
   },
   infomodify: function (e) {
     let val = e.detail.value;

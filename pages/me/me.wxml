@@ -1,2 +1,68 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class='container'>
+      <view class='head'> 
+          <image src='{{userInfo.avatarUrl}}'></image>
+          {{userInfo.nickName}}
+      </view>
+
+      <view class='box list1'>
+          <view class='title'>
+                 <text class='l'>代购</text>
+                 <text class='r'>我的跑腿代购</text>
+          </view>
+
+          <block wx:for="{{myShophelp}}" wx:key="">
+          <view class='one'>
+              <view class='user'>
+                 <image src='{{item.avatarurl}}'></image>
+                  <view class='info'>
+                     <view class='a'>
+                        <text>{{item.name}}</text><text>{{item.sex}}</text>
+                     </view>
+                     <view class='b'>
+                        <view class='money'>跑腿费:￥{{item.money}}</view><text class='time'>{{item.friendly_time}}</text>
+                     </view>
+                  </view>
+              </view>
+               <view class='col'>
+                 <image src='/img/goods.png'></image>{{item.goods}}
+              </view>
+              <view class='col'>
+                 <image src='/img/addr.png'></image>{{item.addr}}
+              </view>
+               <view class='sure' >
+                 <view>已经不需要帮助了^_^</view><text class='help1' bindtap='delShophelp' data-index='{{index}}'>已处理</text>
+              </view>
+             
+          </view>
+      </block>
+      </view>
+
+       <view class='box'>
+         <view class='title'>
+                <text class='l'>招领</text>
+                 <text class='r'>我发布的食物招领</text>
+          </view>
+               
+      </view>
+
+       <view class='box thing-box'>
+
+        <view class='title'>
+                <text class='l'>二手</text>
+               <text class='r'>我发布的二手商品</text>
+          </view>
+
+     <block wx:for="{{myGoodsList}}" wx:key="">
+         <view class='one' >
+          <image class='logo' src='{{item.logo}}'></image>
+    
+           <view class='desc'>
+             {{item.desc}}
+           </view>
+            <view class='goodsdeal'  bindtap='delGoods' data-index="{{index}}">已处理</view>
+
+         </view><!--one end-->
+          </block>
+      </view>
+</view>
