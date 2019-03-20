@@ -1,6 +1,17 @@
 /* pages/foundthing/foundthing.wxss */
+
 .left{
   width: 48%;
+ 
+}
+.one:hover{
+  border: 1px solid#ee0000;
+}
+.one{
+   border: 1px solid #ddd;
+  box-shadow: 1px 1px 10px 1px #ddd;
+  margin-bottom: 20rpx;
+  
 }
 .right{
   width: 48%;
@@ -10,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   padding:1rpx 10rpx;
+  flex-wrap: wrap; 
 }
 
 .mark{
@@ -80,4 +92,74 @@ padding: 0rpx 90rpx;
 
 .address{
   font-size: 27rpx;
+}
+
+.add{
+position: fixed;
+bottom: 1vw;
+right:2vw;
+}
+.top{
+  width: 100vw;
+  height:210rpx;
+  position: fixed;
+  background-color: white; 
+}
+.add:hover{
+filter: brightness(0.3);
+}
+
+.add image{
+  width: 15vw;
+  height: 15vw;
+ background-color: white;
+ border-radius: 15vw;
+}
+
+
+.form-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+  overflow: hidden;
+}
+.form-box{
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  width: 90vw;
+  box-sizing: border-box;
+  padding: 50rpx 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+   z-index: 299;               
+  box-shadow: 1px 1px 3px 1px #eee;
+}
+.form-box .logo{
+  width: 60vw;
+  height: 60vw;
+  margin: 0 auto;
+  display: block;
+}
+.form-box input{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 2px 1px  #DC143C;
+  padding-left: 10rpx;
+  margin-top: 20rpx;
+}
+.form-box  .submit{
+   height: 80rpx;
+   line-height: 80rpx;
+   width: 50vw;
+   margin:20rpx auto;
+   border-radius: 20rpx;
+   background-color: #DC143C;
+   color: white;
+   text-align: center;
 }

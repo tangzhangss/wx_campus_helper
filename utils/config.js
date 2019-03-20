@@ -4,6 +4,63 @@ function getIndex() {
     "notice": "我的校园助手的公告!"
   }
 }
+//失物招领
+function lostAndFound(){
+   return {
+     goods:[
+       {
+         id: 1,
+         logo: "/img/key.jpg",
+         goods: "书1包",
+         name: "andy",
+         mobile: "1234567890",
+         addr: "四川省成都市成都七中A5 605教室"
+       },
+       {
+         id: 2,
+         logo: "/img/key.jpg",
+         goods: "书2包",
+         name: "andy",
+         mobile: "1234567890",
+         addr: ".四川省成都市成都七中A5 605教室"
+       },
+       {
+         id: 3,
+         logo: "/img/key.jpg",
+         goods: "书3包",
+         name: "andy",
+         mobile: "1234567890",
+         addr: "................................."
+       },
+       {
+         id: 4,
+         logo: "/img/key.jpg",
+         goods: "书包4",
+         name: "andy",
+         mobile: "1234567890",
+         addr: "................................."
+       },
+       {
+         id: 5,
+         logo: "/img/key.jpg",
+         goods: "书5包",
+         name: "andy",
+         mobile: "1234567890",
+         addr: "................................."
+       },
+       {
+         id: 6,
+         logo: "/img/key.jpg",
+         goods: "书6包",
+         name: "andy",
+         mobile: "1234567890",
+         addr: "................................."
+       }
+     ]
+   }
+}
+
+//二手商品配置
 function getFoundthing() {
   return {
     goodsList: [
@@ -100,7 +157,7 @@ function getFoundthing() {
     ]
   }
 }
-
+//跑腿代购配置
 function getShopHelper(){
   return {
      //南校区
@@ -220,8 +277,11 @@ avatarurl:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=274612981,3
      ],
   }
 }
+
+
 module.exports={
   getIndex: getIndex,
   getFoundthing: getFoundthing,
-  getShopHelper: getShopHelper
+  getShopHelper: getShopHelper,
+  lostAndFound: lostAndFound
 }

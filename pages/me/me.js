@@ -11,6 +11,63 @@ Page({
      myFoundthing:[],
      myGoodsList:[]
   },
+  dellostgood(e) {
+    var that = this;
+    let index = e.currentTarget.dataset.index;
+    wx.showModal({
+      title: '提示',
+      content: '确认已经有人认领或取消，并删除此项么?',
+      success(res) {
+        if (res.confirm) {
+
+          //1.更新缓存。。。我的
+          let myLostGoods = wx.getStorageSync("myLostGoods");
+
+          let indx = null;
+          myLostGoods.forEach(function (val, i) {
+            if (val.id == myLostGoods[index].id) {
+              console.log("找到了....index:" + i);
+              indx = i;
+            }
+          })
+
+          if (indx != null) {
+            //在我的 ——缓存中 删除此项
+            myLostGoods.splice(indx, 1);
+
+            //更新
+            wx.setStorageSync("myLostGoods", myLostGoods);
+          }
+
+          //1.更新缓存。。。主要
+          let lostGoods = wx.getStorageSync("lostGoods");
+
+          let indxx = null;
+          lostGoods.forEach(function (val, i) {
+            if (val.id == lostGoods[index].id) {
+              console.log("找到了....index:" + i);
+              indxx = i;
+            }
+          })
+
+          if (indxx != null) {
+            //在主要 ——缓存中 删除此项
+            lostGoods.splice(indxx, 1);
+            //更新
+            wx.setStorageSync("lostGoods", lostGoods);
+          }
+          //----------------------------------------------------------------
+
+
+          //更新渲染
+          that.setData({
+            myLostGoods: myLostGoods
+          })
+        }
+      }
+    })
+  },
+
   delShophelp(e){
     var that = this;
     let index = e.currentTarget.dataset.index;
@@ -108,14 +165,14 @@ Page({
    */
   onLoad: function (options) {
      let myShophelp = wx.getStorageSync("myShophelp") || [];
-     let myFoundthing = wx.getStorageSync("myFoundthing") || [];
+    let myLostGoods = wx.getStorageSync("myLostGoods") || [];
      let myGoodsList = wx.getStorageSync("myGoodsList") || [];
     console.log("我的跑腿代购",myShophelp);
-    console.log("我的失物招领", myFoundthing);
+    console.log("我的失物招领", myLostGoods);
     console.log("我的二手商品", myGoodsList);
      this.setData({
        myShophelp: myShophelp,
-       myFoundthing: myFoundthing,
+       myLostGoods: myLostGoods,
        myGoodsList: myGoodsList
      })
   },

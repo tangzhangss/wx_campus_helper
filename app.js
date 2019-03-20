@@ -29,6 +29,13 @@ App({
     this.globalData.shophelper0 = shophelper0 || config.getShopHelper().shophelper0;
     this.globalData.shophelper1 = shophelper1 || config.getShopHelper().shophelper1;
   
+    //4.失物招领
+    let lostGoods = wx.getStorageSync("lostGoods");
+    if (!lostGoods){
+      lostGoods = config.lostAndFound().goods;
+      wx.setStorageSync("lostGoods", lostGoods);
+    }
+
   },
   globalData: {
     userInfo: null,

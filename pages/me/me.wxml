@@ -38,12 +38,29 @@
       </block>
       </view>
 
-       <view class='box'>
-         <view class='title'>
+       <view class='box '>
+          <view class='title'>
                 <text class='l'>招领</text>
-                 <text class='r'>我发布的食物招领</text>
+                 <text class='r'>我发布的食物招领_长按删除</text>
           </view>
-               
+          <view class='lost'>
+            <block wx:for="{{myLostGoods}}" wx:key="">
+         <view class='one ' bind:longpress="dellostgood" data-index="{{index}}">
+            <image class='logo' src='{{item.logo}}'  ></image>
+          <view class='base'>
+             <view class='things'>物品名称：{{item.goods}}</view>
+          <view class='person'>
+           <image class='user' src='/img/person.png'></image>
+           <view class='name'>{{item.name}}</view>
+         </view>
+       <view class='contact'>联系方式：{{item.mobile}}</view>
+         <view class='address'>丢失地址：{{item.addr}}</view>
+       </view>
+        </view><!--one end-->
+      
+    </block>
+    </view>
+     
       </view>
 
        <view class='box thing-box'>

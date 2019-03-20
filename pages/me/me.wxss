@@ -118,7 +118,7 @@ color: rgb(17, 148, 35);
 }
 .thing-box{
   margin: 20rpx auto;
-  width: 96vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -156,4 +156,88 @@ color: rgb(17, 148, 35);
   width: 120rpx;
   font-weight: bold;
   font-size: 28rpx;
+}
+.lost{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+.lost .one{
+  width: 46%;
+   border: 1px solid #ddd;
+  box-shadow: 1px 1px 10px 1px #ddd;
+  margin: 20rpx auto;
+  
+}
+
+.lost .mark{
+  width: 100%;
+ text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: hsl(300, 33%, 99%);
+  background-color:#ddd; 
+}
+
+.lost .find{
+padding:20rpx 2.5vw;
+display: flex;
+width: 100vw;
+height: 120rpx;
+align-items: center;
+justify-content: space-between;
+}
+
+.lost .find input{
+width: 70%;
+border: 1rpx solid #ddd;
+height: 80rpx;
+line-height: 80rpx;
+border-radius: 10rpx;
+padding-left: 10rpx; 
+}
+
+.lost .find button{
+  width:20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background-color:#DC143C;
+  color: white;
+  padding: 0;
+}
+
+.lost .logo{
+  width: 100%;
+  height: 40vw;
+}
+
+.lost .things{
+  font-size: 27rpx;
+}
+
+.lost .user{
+  width:5vw;
+  height:5vw;
+  border-radius: 20rpx;
+}
+
+.lost .name{
+font-size: 27rpx;
+padding: 0rpx 90rpx;
+}
+
+.lost .person{
+  display: flex;
+  font-size: 27rpx;
+}
+
+.lost .contact{
+  font-size: 27rpx;
+}
+
+.lost .address{
+  font-size: 27rpx;
 }
