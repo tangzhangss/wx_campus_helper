@@ -117,7 +117,7 @@ Page({
     goodsList.forEach(function(val,index){
       let i = val.desc.indexOf(key);
       console.log("配置索引:结果 ",index,i)
-      if (i > 0){
+      if (i >= 0){
         console.log("匹配成功，添加..."+val.id)
         temps.push(val);
       }
