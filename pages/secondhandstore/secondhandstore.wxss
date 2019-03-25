@@ -77,6 +77,32 @@ page{
   text-align: left;
   width: 100%;
 }
+.thing-box .one  .price .area1{
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: white;
+  background-color: rgb(224, 29, 250);
+  border-radius: 10rpx;
+  margin-left:25rpx; 
+  font-size: 20rpx;
+}
+.thing-box .one  .price .area2{
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: white;
+    margin-left:20rpx; 
+  background-color: rgb(99, 146, 248);
+  border-radius: 10rpx;
+  font-size: 20rpx;
+}
+.radio-group{
+  margin: 20rpx;
+  text-align: center;
+}
+.radio-group >view{
+  margin-right: 40rpx;
+  display: inline-block
+}
 .thing-box .one .call{
   width: 40rpx;
   height:40rpx;

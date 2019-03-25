@@ -72,7 +72,8 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述一哦^_^",
         "contact": "10086",
-        "price":"99",
+        "price": "99",
+      area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 2,
@@ -82,7 +83,7 @@ function getFoundthing() {
         "status": 1,
         "desc": "我商品描述二哦^_^我商品描述2哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 3,
@@ -92,7 +93,7 @@ function getFoundthing() {
         "status": 1,
         "desc": "我商品描述三哦^_^我商品描述3哦^_^我商品描述3哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 10,
@@ -102,7 +103,7 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述四哦^_^我商品描述4哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 4,
@@ -112,7 +113,7 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述哦5^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 5,
@@ -122,7 +123,7 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述5哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 2 //1表示南校区 2表示北校区
       },
       {
         "id": 6,
@@ -132,7 +133,7 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述6哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id":7,
@@ -142,7 +143,7 @@ function getFoundthing() {
         "status":0,
         "desc": "我商品描述7哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 2//1表示南校区 2表示北校区
       },
       {
         "id": 8,
@@ -152,7 +153,7 @@ function getFoundthing() {
         "status":0,
         "desc": "我商品描述8哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area: 1 //1表示南校区 2表示北校区
       },
       {
         "id": 9,
@@ -162,7 +163,7 @@ function getFoundthing() {
         "status": 0,
         "desc": "我商品描述9哦^_^",
         "contact": "10086",
-        "price": "99",
+        "price": "99", area:2 //1表示南校区 2表示北校区
       }
     ]
   }

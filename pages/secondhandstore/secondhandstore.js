@@ -27,6 +27,9 @@ Page({
       },
     })
   },
+  radioChange:function(e){
+    this.data.info.area = e.detail.value;
+  },
   infomodify: function (e) {
     let val = e.detail.value;
     let col = e.currentTarget.dataset.col;
