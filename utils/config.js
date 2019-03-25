@@ -71,7 +71,8 @@ function getFoundthing() {
         "name": "学生一",
         "status": 0,
         "desc": "我商品描述一哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price":"99",
       },
       {
         "id": 2,
@@ -80,7 +81,8 @@ function getFoundthing() {
         "name": "学生二",
         "status": 1,
         "desc": "我商品描述二哦^_^我商品描述2哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 3,
@@ -89,7 +91,8 @@ function getFoundthing() {
         "name": "学生三",
         "status": 1,
         "desc": "我商品描述三哦^_^我商品描述3哦^_^我商品描述3哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 10,
@@ -98,7 +101,8 @@ function getFoundthing() {
         "name": "学生四",
         "status": 0,
         "desc": "我商品描述四哦^_^我商品描述4哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 4,
@@ -107,7 +111,8 @@ function getFoundthing() {
         "name": "学生五",
         "status": 0,
         "desc": "我商品描述哦5^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 5,
@@ -116,7 +121,8 @@ function getFoundthing() {
         "name": "学生六",
         "status": 0,
         "desc": "我商品描述5哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 6,
@@ -125,7 +131,8 @@ function getFoundthing() {
         "name": "学生七",
         "status": 0,
         "desc": "我商品描述6哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id":7,
@@ -134,7 +141,8 @@ function getFoundthing() {
         "name": "学生八",
         "status":0,
         "desc": "我商品描述7哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 8,
@@ -143,7 +151,8 @@ function getFoundthing() {
         "name": "学生九",
         "status":0,
         "desc": "我商品描述8哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       },
       {
         "id": 9,
@@ -152,7 +161,8 @@ function getFoundthing() {
         "name": "学生十",
         "status": 0,
         "desc": "我商品描述9哦^_^",
-        "contact": "10086"
+        "contact": "10086",
+        "price": "99",
       }
     ]
   }

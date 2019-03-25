@@ -1,6 +1,9 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+  },
   "navigationBarBackgroundColor": "#ee0000",
   "navigationBarTitleText": "二手商城",
   "navigationBarTextStyle": "white"
+  
+
 }

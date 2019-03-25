@@ -25,6 +25,9 @@
            </view>
              <view class='status' wx:if="{{item.status!=0}}">已处理</view>
          </view>
+           <view class='price'>
+            ￥{{item.price}}
+           </view>
            <view class='desc'>
              {{item.desc}}
            </view>
@@ -45,6 +48,9 @@
            </view>
              <view class='status' wx:if="{{item.status!=0}}">已处理</view>
          </view>
+         <view class='price'>
+            ￥{{item.price}}
+           </view>
            <view class='desc'>
              {{item.desc}}
            </view>
@@ -67,7 +73,8 @@
 <view class='form-box'>
      <image class='logo'   src='{{info.logo}}'  bindtap='chooseImage'>
      </image>
-     <input class='contact' placeholder='联系方式' bindinput='infomodify' data-col="contact"></input>
+     <input class='contact' placeholder='联系方式' bindinput='infomodify' data-col="contact"  type='number'></input>
+       <input class='contact' placeholder='价格' bindinput='infomodify' data-col="price" type='number'></input>
       <input class='desc' placeholder='物品描述' bindinput='infomodify' data-col="desc"></input>
       <view class='submit' bindtap='saveFormboxcontent'>提交</view>
 </view> 

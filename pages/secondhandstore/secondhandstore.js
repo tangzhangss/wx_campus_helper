@@ -1,5 +1,5 @@
 // pages/secondhandstore/secondhandstore.js
-const webUtil = require("../../utils/config.js");
+const webUtil = require("../../utils/web.js");
 const app = getApp();
 Page({
 
@@ -13,6 +13,7 @@ Page({
       logo:'http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg',
       contact:'',
       desc:'',
+      price:0,
       status:0,
     }
   },
@@ -72,6 +73,16 @@ Page({
     let goodsList = wx.getStorageSync("goodsList") || [];
 
     let info = this.data.info;
+   
+    //格式校验
+    if(!(info.contact && info.price && info.desc)){
+
+      webUtil.showToastWithWarnIcon("请全部填写");
+
+      return fasle;
+    }
+
+
     let id = goodsList.length;
     goodsList.forEach((val,index)=>{
          if(val.id == id){
