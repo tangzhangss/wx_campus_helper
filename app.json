@@ -5,7 +5,9 @@
     "pages/foundthing/foundthing",
     "pages/shophelper/shophelper",
     "pages/secondhandstore/secondhandstore",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/secondhandstore/detail/detail",
+    "pages/secondhandstore/detail/chat/chat"
   ],
   "window": {
     "backgroundTextStyle": "light",

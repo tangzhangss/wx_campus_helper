@@ -13,9 +13,31 @@ Page({
       logo:'http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg',
       contact:'',
       desc:'',
+      picdesc:[],
       price:0,
       status:0,
     }
+  },
+  showDetail:function(e){
+    let index = e.currentTarget.dataset.index;
+    let goods = this.data.goodsList[index];
+    app.globalData.goodsdetail = goods;
+    wx.navigateTo({
+      url: './detail/detail',
+    })
+  },
+  choosePic:function(e){
+    let index = e.currentTarget.dataset.index;
+    var that = this;
+    let info = this.data.info;  
+    wx.chooseImage({
+      success: function (res) {
+        info.picdesc[index] = res.tempFilePaths[0];
+        that.setData({
+          info: info
+        })
+      },
+    })
   },
   chooseImage: function () {
     var that = this;
@@ -82,7 +104,7 @@ Page({
 
       webUtil.showToastWithWarnIcon("请全部填写");
 
-      return fasle;
+      return false;
     }
 
 

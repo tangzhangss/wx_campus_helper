@@ -1,0 +1,44 @@
+<!--pages/consult/chat/chat.wxml-->
+<view class='top'>
+   <view class='prompt'>
+      温馨提示:网络诈骗常存在，切莫傻逼一小时
+   </view>
+    <view class="head {{detailHide =='false'?'head2':'head1'}}">
+        <view class='title'>
+           <view class='info'>
+              <image src='{{avatars}}'></image>
+             <view>
+               <text class='status leave'>离开</text>
+              </view>
+           </view>
+        </view>
+     </view>   
+</view>  
+<view class="bound {{detailHide =='false'?'bound1':'bound2'}}">...</view>
+
+<view class="container">
+<scroll-view scroll-y scroll-into-view="{{scroll_bottom}}"  class="msgbox  {{detailHide =='false'?'msgbox1':'msgbox2'}}">
+       <block wx:for="{{logs}}" wx:key="">
+          <!--我的的消息-->
+          <view  class="one">
+               <view class='content right' >
+                  <view wx:if="{{item.ctype==1}}">{{item.message}}</view>
+                   <image class='logimg' bindtap="prevImage"src="{{item.image}}"  src='{{item.image}}' wx:if="{{item.ctype==2}}" data-image="{{item.image}}"  mode="widthFix">
+               </image>
+               </view>
+               <image class='logo imgright' src='{{userInfo.avatarUrl}}'></image>
+                <view class='time right'>
+                      <text>{{item.replytimeshow}}</text>
+                 </view>
+          </view>
+       </block>
+       <view class='scroll_bottom'  id="scroll_bottom">---到底了---</view>
+    </scroll-view>
+</view>                                                            
+<view class='sendbox' wx:if="{{consult.dealStatus != 3 || identity == 3}}">
+    <input placeholder='请输入...' bindinput='setMessageinput' value='{{messageinput}}'></input>   
+    <view class='btn'>
+       <image src='/img/add.png' bindtap='sendImage'></image>
+       <view class='send' bindtap='sendMessage' >发送</view>
+    </view>
+</view>

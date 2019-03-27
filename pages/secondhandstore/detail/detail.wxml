@@ -1,0 +1,27 @@
+<view class="container">
+ 
+  <image class='show' mode='widthFix' src='{{detail.logo}}'></image>
+   <image  class='show' mode='widthFix' src='{{detail.picdesc[0]}}'></image>
+   <image class='show'  mode='widthFix' src='{{detail.picdesc[1]}}'></image>
+   <image  class='show' mode='widthFix' src='{{detail.picdesc[2]}}'></image>
+   <image  class='show' mode='widthFix' src='{{detail.picdesc[3]}}'></image>
+   <view style='color:white;height:20vh'>...</view>
+</view>
+<view class='bottom'>
+  <view class='desc'>
+     {{detail.desc}}
+  </view>
+  <view class='base'>
+     <view class='user'>
+        <image src='{{detail.avatars}}'></image>
+        {{detail.name}}
+     </view>
+     <view class='op'>
+        <view class='l' bindtap='chat'>微聊</view>
+        <view class='r' bindtap='call' data-num="{{detail.contact}}">电话</view>
+     </view>
+  </view>
+</view>
+<view>
+
+</view>

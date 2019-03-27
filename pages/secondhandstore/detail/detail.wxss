@@ -1,0 +1,67 @@
+/* pages/secondhandstore/detail/detail.wxss */
+.container{
+  width: 100vw;
+}
+.show{
+  width: 95vw;
+  margin: 20rpx auto;
+  display: block;
+  border-radius: 20rpx;
+
+}
+.bottom{
+  position: fixed;
+  height: 18vh;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  padding:20rpx 0;
+  box-sizing: border-box;
+}
+.bottom image{
+  margin-left: 20rpx;
+  width: 60rpx;
+  border-radius: 60rpx;
+  height: 60rpx;
+}
+.bottom .desc{
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx;
+  height: 8vh;
+  margin-left: 20rpx;
+  line-height: 4vh;
+  font-size: 30rpx;
+
+}
+.base .user{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.base{
+  height: 8vh;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.base .op{
+  display: flex;
+  justify-content: space-around;
+}
+.base .op .l{
+  width: 150rpx;
+  background-color: rgb(69, 226, 69);
+  color: white;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+}
+.base .op .r{
+    height: 8vh;
+  line-height: 8vh;
+  width: 150rpx;
+  background-color: rgb(245, 173, 18);
+  color: white;
+    text-align: center;
+}

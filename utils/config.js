@@ -67,6 +67,13 @@ function getFoundthing() {
       {
         "id":1,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        //辅助图片描述 4张
+        "picdesc":[
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生一",
         "status": 0,
@@ -78,6 +85,12 @@ function getFoundthing() {
       {
         "id": 2,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生二",
         "status": 1,
@@ -88,6 +101,12 @@ function getFoundthing() {
       {
         "id": 3,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生三",
         "status": 1,
@@ -98,6 +117,12 @@ function getFoundthing() {
       {
         "id": 10,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生四",
         "status": 0,
@@ -108,6 +133,12 @@ function getFoundthing() {
       {
         "id": 4,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生五",
         "status": 0,
@@ -118,6 +149,12 @@ function getFoundthing() {
       {
         "id": 5,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生六",
         "status": 0,
@@ -128,6 +165,12 @@ function getFoundthing() {
       {
         "id": 6,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生七",
         "status": 0,
@@ -138,6 +181,12 @@ function getFoundthing() {
       {
         "id":7,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生八",
         "status":0,
@@ -148,6 +197,12 @@ function getFoundthing() {
       {
         "id": 8,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生九",
         "status":0,
@@ -158,6 +213,12 @@ function getFoundthing() {
       {
         "id": 9,
         "logo": "http://img0.imgtn.bdimg.com/it/u=1131526118,647367586&fm=26&gp=0.jpg",
+        "picdesc": [
+          "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3316419459,29192861&fm=27&gp=0.jpg",
+          "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1005384713,2963361968&fm=27&gp=0.jpg",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3006455014,3110469038&fm=85&s=75102D3B170269434CF1BDCE0300E024",
+          "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=272289460,1872214664&fm=85&s=9F104D8568B3AA8CA4B035A70300C000"
+        ],
         "avatars": "http://img1.imgtn.bdimg.com/it/u=2278739224,3680254183&fm=26&gp=0.jpg",
         "name": "学生十",
         "status": 0,

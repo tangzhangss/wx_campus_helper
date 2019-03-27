@@ -1,0 +1,350 @@
+/* pages/consult/chat/chat.wxss */
+page{
+  background-color: #eee;
+  position: relative;
+}
+.top{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+.bound{
+  color: white;
+}
+.bound1{
+  height:35vh;
+}
+.bound2{
+  height:20vh;
+}
+.prompt{
+  width:100%;
+  font-size: 30rpx;
+  color: white;
+  height: 5vh;
+  background-color: #ddd;
+  padding: 10rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.head{
+  width: 100%;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 32rpx;
+}
+.head1{
+    height: 15vh;
+}
+.head2{
+    height: 30vh;
+}
+
+.head .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 1rpx solid #eee;
+}
+
+.head .title .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .status{
+  font-size: 26rpx;
+}
+.head .online{
+  color: #02dc81;
+}
+.head .leave{
+  color: #f11010;
+}
+.head .title .info image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  margin-right: 20rpx;
+  background-color: #f7f7f7;
+}
+.logimg{
+  width: 200rpx;
+}
+.head .title .complete{
+  color: white;
+  background-color: red;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  font-size: 20rpx;
+  font-weight: bold;
+}
+.head .title .complete image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.opbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #999;
+  height:15vh;
+}
+
+.opbox .one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 160rpx;
+  width: 33%;
+}
+.opbox .one image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.arrow{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5vh;
+}
+.arrow image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.container{
+  position: relative;
+  width: 95vw;
+  margin: 0 auto;
+  overflow:auto;
+}
+.msgbox{
+  width: 100%;
+  box-sizing: border-box;
+}
+.msgbox1{
+  height:55vh;
+}
+.msgbox2{
+  height:70vh;
+}
+.msgbox .one{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20rpx 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.msgbox .one .logo{
+  width: 12vw;
+  height: 12vw;
+  margin-right: 2vw;
+  border-radius: 12vw;
+  background-color: white;
+}
+.msgbox .one .content{
+   width:80vw;
+   margin-top: 10rpx;
+}
+.msgbox .one .content view{
+   display: inline-block;
+   background-color: white;
+   border-radius: 20rpx;
+   word-break: break-all;
+   padding: 20rpx;
+   box-sizing: border-box;
+}
+.msgbox .one .img{
+   width: 30vw;
+   margin-top: 10rpx;
+}
+.msgbox .one .right{
+  text-align: right;
+}
+.msgbox .one .imgright{
+  margin-right: 0;
+  margin-left: 2vw;
+}
+.time{
+  width: 100%;
+  margin: 20rpx 0;
+}
+.time text{
+  background-color:#ddd;
+  color: white;
+  padding: 5rpx 20rpx;
+  font-size: 25rpx;
+  border-radius: 10rpx;
+
+}
+
+.sendbox{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100vw;
+  height: 10vh;
+  padding: 10rpx 2.5vw; 
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.sendbox image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.sendbox input{
+  width: 70vw;
+  background-color: white;
+  border-radius: 5rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #eee;
+  padding-left: 10rpx;
+}
+.sendbox .btn{
+  width:30vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sendbox .btn .send{
+   padding:0 20rpx;
+   background-color: #02c6dc;
+   color: white;
+   border-radius: 6rpx;
+   height:70rpx;
+   line-height:70rpx;
+}
+.scroll_bottom{
+  color: #aaa;
+  font-size:28rpx; 
+  text-align:center;
+  line-height: 50rpx;
+  padding-top: 50rpx;
+}
+
+.consult_detail_box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+.consult_detail_box .backbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 300;
+}
+.consult_detail_box .cbox{
+  position: relative;
+  width: 95vw;
+  background-color: white;
+  border-radius: 20rpx;
+ z-index: 400;
+  box-sizing: border-box;
+  margin: 50rpx auto 0 auto;
+  overflow: hidden;
+   font-size: 35rpx;
+}
+.consult_detail_box .cbox .consult_head{
+  padding: 30rpx;
+  color: white;
+  background-color: rgb(57, 192, 57);
+}
+.consult_detail_box .cbox .consult_head .cmark{
+  font-size: 50rpx;
+  line-height: 70rpx;
+}
+.consult_detail_box .cbox .consult_head .ccontent{
+  font-size: 28rpx;
+  margin: 20rpx 0;
+  color: #f7f7f7;
+}
+.consult_detail_box .cbox .consult_head .ccontent text{
+  margin: 0 20rpx;
+}
+
+.consult_detail_box .cbox .ctitle{
+  margin: 30rpx;
+  font-size: 40rpx;
+}
+.consult_detail_box .cbox .ctitle text{
+  color:rgb(57, 192, 57);
+}
+.consult_detail_box .cbox .ctext{
+  color:#777;
+  margin: 30rpx;
+}
+.consult_detail_box .cbox .cimage{
+   margin: 20rpx;
+}
+.consult_detail_box .cbox .cimage image{
+  width: 20%;
+  height: 200rpx;
+  margin: 10rpx 2%;
+}
+.consult_detail_box .del{
+  width: 100%;
+  text-align: center;
+}
+.consult_detail_box .del image{
+   position: relative;
+   width: 80rpx;
+   height: 80rpx;
+   margin-top: 20rpx;
+   z-index: 400;
+}
+
+.assessbox{
+  width: 100%;
+  height: 10vh;
+  padding: 10rpx 2.5vw; 
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.assessbox input{
+  width: 80%;
+  background-color: white;
+  border-radius: 5rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #eee;
+  padding-left: 10rpx;
+}
+.assessbox .btn{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assessbox .btn .send{
+   padding:0 20rpx;
+   background-color: #02c6dc;
+   color: white;
+   border-radius: 6rpx;
+   height:70rpx;
+   line-height:70rpx;
+}
